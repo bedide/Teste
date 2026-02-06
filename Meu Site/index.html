@@ -89,9 +89,82 @@
             <!--Pergunta 8: imagem-->
             <section>
                 <h2>Pergunta 8: Qual lingaguem de programação é representada pelo logotipo abaixo?</h2>
-                <img src="./assets/perg8.png" alt="">
+            <figure>    
+                <img src="./assets/perg8.png" alt="Logotipo de uma linguagem de programação"><br>
+                <figcaption>Figura 1: Logotipo de uma lingaguem de programação</figcaption>
+            </figure>    
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+            </section>
+            <!--Tabela de pontuação-->
+            <section>
+                <h2>Tabela de Pontuação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Não desista! Cada tentativa é uma oportunidade de você aprender</td> 
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Você ainda precisa melhorar. Que tal estudar mais sobre programação?</td>
+                        </tr>
+                        <tr>
+                            <td>5-7</td>
+                            <td>Bom! Seu conhecimento em programação está satisfatório</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Perfeito! Você está muito bem informado sobre programação</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"> <em>Boa sorte na próxima! Estude mais para melhorar seus conhecimentos!</em> </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!--Listas de respostas-->
+            <section>
+                <h2>Verifique suas respostas</h2>
+                <details>
+                    <summary>Clique aqui para ver as respostas!</summary>
+                    <ol>
+                        <li>HTML</li>
+                        <li>Domínio</li>
+                        <li>Ab23!kao8Anmd#</li>
+                        <li>1991</li>
+                        <li>Javascript, Java</li>
+                        <li>Arquivo deve ter extensão .html</li>
+                        <li>Type</li>
+                        <li>Java</li>
+                    </ol>
+                </details>
+            </section>
+            <!--Formulário de Feedback-->
+            <section>
+                <h2>Nos dê o seu Feedback</h2>
+                <form>
+                    <fieldset>
+                        <legend>Informações de contato</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comments">Comentários:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea>
+                </fieldset>
+                </form>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Quiz de Programadores. Todos os direitos reservados</p>
+        </footer>
     </body>
 </html>
