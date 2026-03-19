@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* centraliza a aplicação */
+
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* container principal */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 320px;
+    border: 1px solid black;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+
+.header h1 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+}
+
+/* icons */
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    height: 32px;
+}
+
+.icon.arrow {
+    height: 24px;
+}
+
+.icon.rotate {
+    transform: rotate(180deg);
+}
+
+/* botoes objetivos */
+
+.objetivo {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    padding: 12px;
+    gap: 12px;
+    cursor: pointer;
+}
+
+
+.objetivo:hover {
+    opacity: 0.9;
+}
+
+/* cores dos objetivos */
+
+.sussa {
+    background: #bbf7d0;
+}
+
+.foco {
+    background: #fecaca;
+}
+
+.dormir {
+    background: #bfdbfe;
+}
+
+/* lado esquerdo do objetivo */
+
+.obj-left {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+/* imagem do bob */
+
+.obj-img {
+    padding: 8px;
+    height: 110px;
+    width: 110px;
+}
+
+/* texto */
+
+.obj-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.obj-text h2 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 28px;
+}
+
+.obj-text p {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+/* telas welcome */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 480px;
+    width: 320px;
+    padding: 40px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.welcome img {
+    height: 100px;
+}
+
+/* botao proximo */
+
+.botao {
+    height: 40px;
+    width: 100%;
+    background: #93c5fd;
+    border-radius: 4px;
+    border: 1px solid #172554;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #60a5fa;
+}
+
+/* animar bobs */
+
+@keyframes mexer {
+    0% {transform: rotate(0deg) translateY(0);}
+    25% {transform: rotate(-5deg) translateY(-3px);}
+    50% {transform: rotate(5deg) translateY(0);}
+    75% {transform: rotate(-5deg) translateY(3px);}
+    100% {transform: rotate(0deg) translateY(0);}
+}
+
+.animar {
+    animation: mexer 1s infinite;
+}
+
+/* player */
+
+.player {
+    width: 320px;
+    height: 480px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+/* bob */
+
+.player img {
+    height: 120px;
+}
+
+/* barra */
+
+.barra {
+    width: 100%;
+    height: 10px;
+    background: gray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progresso {
+    height: 100%;
+    width: 0%;
+    background: #4ade80;
+    transition: width 0.3s;
+}
+
+/* tempos */
+
+.tempos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* controle */
+
+.controles {
+    display: flex;
+    gap: 10px;
+}
+
+.controles button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: #60a5fa;
+}
+
+.controles button:hover {
+    background: #3b82f6;
+}
+
+
+/* ESTATISTICAS */
+
+.body-estatis {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee;
+}
+
+.topo {
+    border-bottom: 2px solid #bbb;
+    padding: 10px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil img {
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 0.875rem; /* pequeno */
+    margin-left: 0.25rem; /* espacinho à esquerda */;   
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background: white;
+}
+
+.numero {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 14px;
+}
+
+.baixo {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    justify-content: space-evenly;
+    background: #bedbff;
+}

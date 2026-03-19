@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Boas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <button onclick="voltar()">
+                <img src="imagens/Icons/arrowback.png" class="icon back">
+            </button>
+            <h1>OBJETIVOS</h1>
+            <button onclick="estatisticas()">
+                <img src="imagens/Icons/estatisticas.png" class="icon">
+            </button>
+        </header>
+
+        <!--ficar sussa-->
+
+    <button class="objetivo sussa" onclick="playersussa()">
+        <div class="obj-left">
+        <img src="imagens/BobHome/BobSussa.png" class="obj-img" id="Sussa">
+        <div class="obj-text">
+            <h2>FICAR<br>SUSSA</h2>
+            <p>Relaxar, reduzir ansiedade e stress</p>
+        </div>
+        </div>
+        <img src="imagens/Icons/arrow.png" class="icon">
+    </button>
+
+        <!--foco -->
+        
+    <button class="objetivo foco" onclick="playerfoco()">
+        <div class="obj-left">
+            <img src="imagens/BobHome/BobFoco.png" class="obj-img">
+            <div class="obj-text">
+                <h2>OLHA<br>A FOCA!</h2>
+                <p>Aumentar o foco</p>
+            </div>
+        </div>
+        <img src="imagens/Icons/arrow.png" class="icon">
+    </button>
+
+         <!--dormir -->
+
+    <button class="objetivo dormir" onclick="playerdormir()">
+        <div class="obj-left">
+            <img src="imagens/BobHome/BobDormir.png" class="obj-img">
+            <div class="obj-text">
+                <h2>DORMIR<br>DE BOAS</h2>
+                <P>Dormir melhor</P>
+            </div>
+        </div>
+        <img src="imagens/Icons/arrow.png" class="icon">
+    </button>
+    </div>
+    <script src="js/home.js"></script>
+</body>
+</html>
