@@ -112,9 +112,21 @@ button {
     align-items: flex-end;
 }
 
-/* imagem do bob */
+/* imagem dos bob */
 
 .obj-img {
+    padding: 8px;
+    height: 110px;
+    width: 110px;
+}
+
+.obj-img2 {
+    padding: 8px;
+    height: 110px;
+    width: 110px;
+}
+
+.obj-img3 {
     padding: 8px;
     height: 110px;
     width: 110px;
@@ -176,81 +188,136 @@ button {
 
 /* animar bobs */
 
-@keyframes mexer {
-    0% {transform: rotate(0deg) translateY(0);}
-    25% {transform: rotate(-5deg) translateY(-3px);}
-    50% {transform: rotate(5deg) translateY(0);}
-    75% {transform: rotate(-5deg) translateY(3px);}
-    100% {transform: rotate(0deg) translateY(0);}
+@keyframes respirar {
+    0%, 100% {transform: scale(1); }
+    50% { transform: scale(2); }
 }
 
-.animar {
-    animation: mexer 1s infinite;
+.obj-img {
+    animation: respirar 3s ease-in-out infinite;
 }
 
-/* player */
+@keyframes foco {
+    0%, 100% { transform:  translateX(0);}
+    25% { transform:  translateX(-5px);}
+    75% { transform: translateX(5px);}
+}
 
-.player {
-    width: 320px;
-    height: 480px;
-    border: 1px solid black;
+.obj-img2 {
+    animation: foco 0.5s infinite;
+}
+
+@keyframes dormir {
+    0%, 100% {transform: translateY(0);}
+    50% { transform: translateY(10px)}
+}
+
+.obj-img3 {
+    animation: dormir 2.5s ease-in-out infinite;
+}
+
+/* playerSussa */
+
+.iconefechar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    text-align: center;
+    justify-content: end;
 }
 
-/* bob */
-
-.player img {
-    height: 120px;
+.iconfechar {
+    height: 34px;
 }
 
-/* barra */
-
-.barra {
-    width: 100%;
-    height: 10px;
-    background: gray;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progresso {
-    height: 100%;
-    width: 0%;
-    background: #4ade80;
-    transition: width 0.3s;
-}
-
-/* tempos */
-
-.tempos {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
-/* controle */
-
-.controles {
-    display: flex;
-    gap: 10px;
-}
-
-.controles button {
-    padding: 10px 20px;
+.botaofechar {
     cursor: pointer;
-    border: none;
-    background: #60a5fa;
 }
 
-.controles button:hover {
-    background: #3b82f6;
+.iconfechar:hover {
+    height: 42px;
 }
+
+.quadrado {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 260px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bbf7d0;
+}
+
+.bobsussa {
+    padding: 4px;
+    height: 110px;
+    width: 110px;
+}
+
+@keyframes respirar {
+    0%, 100% {transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.bobsussa {
+    animation: respirar 3s ease-in-out infinite;
+}
+
+/* playerFoco */
+
+.quadrado2 {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 260px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fecaca;
+}
+
+.bobfoco {
+    padding: 4px;
+    height: 110px;
+    width: 110px;
+}
+
+@keyframes foco {
+    0%, 100% { transform:  translateX(0);}
+    25% { transform:  translateX(-3px);}
+    75% { transform: translateX(3px);}
+}
+
+.bobfoco {
+    animation: foco 1s infinite;
+}
+
+/* playerDormir */
+
+.quadrado3 {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 260px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bfdbfe;
+}
+
+.bobdormir {
+    padding: 4px;
+    height: 110px;
+    width: 110px;
+}
+
+@keyframes dormir {
+    0%, 100% {transform: translateY(0);}
+    50% { transform: translateY(5px)}
+}
+
+.bobdormir {
+    animation: dormir 2.5s ease-in-out infinite;
+}
+
 
 
 /* ESTATISTICAS */
@@ -278,6 +345,7 @@ button {
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    background: #bedbff;
 }
 
 .bloco {
@@ -322,3 +390,22 @@ button {
     justify-content: space-evenly;
     background: #bedbff;
 }
+
+
+/* animar bob estatisticas */
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.BobEstatisticas {
+    animation: girar 3s linear infinite;
+}
+
+/* PLAYER TESTE1 */
+

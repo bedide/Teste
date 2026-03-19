@@ -12,16 +12,16 @@ function estatisticas() {
 
 // salvar o objetivo escolhido e ir para player 
 
-function playersussa() {
-    window.location.href = "player.html"
+function playerfoco() {
+    window.location.href = "playerfoco.html"
 }
 
-function playerfoco() {
-    window.location.href = "player2.html"
+function playersussa() {
+    window.location.href = "playersussa.html"
 }
 
 function playerdormir() {
-    window.location.href = "player3.html"
+    window.location.href = "playerdormir.html"
 }
 
 const bonecos = document.querySelectorAll(".obj-img");
