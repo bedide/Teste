@@ -49,6 +49,14 @@ button {
     padding: 0;
 }
 
+/* bobs inicio */
+
+.bobinicio {
+    padding: 8px;
+    height: 110px;
+    width: 110px;
+}
+
 /* icons */
 
 .icon {
@@ -60,7 +68,7 @@ button {
 }
 
 .icon:hover {
-    height: 32px;
+    opacity: 0.2;
 }
 
 .icon.arrow {
@@ -232,7 +240,7 @@ button {
 }
 
 .iconfechar:hover {
-    height: 42px;
+    opacity: 0.2;
 }
 
 .quadrado {

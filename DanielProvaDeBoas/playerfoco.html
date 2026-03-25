@@ -18,10 +18,27 @@
         <div class="quadrado2">
             <img src="imagens/BobHome/BobFoco.png" class="bobfoco">
         </div>
+        
+        <div class="tempo">
+            <span id="tempoAtual">00:00</span>
+            <span id="tempoFinal">1:00</span>
+        </div>
 
         <div class="barra">
-
+            <div class="progresso" id="progresso"></div>
         </div>
+
+        <div class="play" onclick="togglePlay()">
+            <img src="imagens/Icons/botao-play.png" id="iconePlay">
+        </div>
+
+        <div class="objetivoPlayer">
+            <p>AUMENTAR O FOCO</p>
+        </div>
+
+        <button class="btn">OLHA A <br> FOCA</button>
+
+        <audio id="audio" src="audio/meditacao.mp3"></audio>
     </div>
     <script src="js/playerfoco.js"></script>
 </body>

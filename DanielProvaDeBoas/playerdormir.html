@@ -19,9 +19,26 @@
             <img src="imagens/BobHome/BobDormir.png" class="bobdormir">
         </div>
 
-        <div class="barra">
-
+         <div class="tempo">
+            <span id="tempoAtual">00:00</span>
+            <span id="tempoFinal">1:00</span>
         </div>
+
+        <div class="barra">
+            <div class="progresso" id="progresso"></div>
+        </div>
+
+        <div class="play" onclick="togglePlay()">
+            <img src="imagens/Icons/botao-play.png" id="iconePlay">
+        </div>
+
+        <div class="objetivoPlayer">
+            <p>DORMIR DE BOAS</p>
+        </div>
+
+        <button class="btn">DORMIR <br> MELHOR</button>
+
+        <audio id="audio" src="audio/meditacao.mp3"></audio>
     </div>
     <script src="js/playerdormir.js"></script>
 </body>
