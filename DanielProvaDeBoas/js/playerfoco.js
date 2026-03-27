@@ -7,6 +7,7 @@ const icone = document.getElementById("iconePlay");
 const progresso = document.getElementById("progresso");
 const tempoAtual = document.getElementById("tempoAtual");
 
+
 const LIMITE = 60; // 1 minuto
 
 function togglePlay() {
